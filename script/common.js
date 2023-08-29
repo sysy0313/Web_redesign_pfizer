@@ -1,7 +1,7 @@
 // header
 window.addEventListener('scroll',function(){
     if(window.pageYOffset == 0){
-        header.style.background = 'rgba(255,255,255,0.7)'
+        header.style.background = 'none'
         sub_bg.style.background = 'rgba(255,255,255,0.7)'
         search_open.style.background = 'rgba(255,255,255,0.7)'
     }else{
@@ -26,11 +26,16 @@ const m_nav_sub = document.querySelectorAll('.m_nav_open .sub')
 const header_search = document.querySelector('.header_search')
 const search_open = document.querySelector('.search_open')
 
-for(let i of gnb_li){i.addEventListener('mouseover', function(){
+/* for(let i of gnb_li){i.addEventListener('mouseover', function(){
     sub_bg.classList.add('open')
     for(let i of gnb_sub){i.classList.add('open')}
     header.classList.add('sub')
-})}
+})} */
+nav.addEventListener('mouseover', function(){
+    sub_bg.classList.add('open')
+    for(let i of gnb_sub){i.classList.add('open')}
+    header.classList.add('sub')
+})
 sub_bg.addEventListener('mouseout', function(){
     sub_bg.classList.remove('open')
     for(let i of gnb_sub){i.classList.remove('open')}
