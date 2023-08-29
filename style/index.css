@@ -1,0 +1,28 @@
+main {}
+#wrap {}
+/* ---------------visual--------------- */
+#wrap .visual {}
+#wrap .visual  #visual_slide {}
+#wrap .visual  #visual_slide  .swiper-wrapper {}
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide {
+    background-size:cover; background-repeat:no-repeat; background-position:center; 
+    height:100vh;
+    display:flex; justify-content:flex-end; align-items:center;
+    padding-right:10%;
+}
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 {text-align:right; }
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 span {
+    display:block;
+    font-size:3.75rem; letter-spacing:-0.02em; line-height:90px;
+}
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 em {
+    display:block;
+    font-size:4.688rem; letter-spacing:-0.02em; font-weight:500;
+    line-height:90px;
+    color:#1A0077;
+}
+#wrap .visual  #visual_slide  .swiper-wrapper .slide1 {background-image:url(../images/slide_bg01.jpg);}
+#wrap .visual  #visual_slide  .swiper-wrapper .slide2 {background-image:url(../images/slide_bg02.jpg);}
+#wrap .visual  #visual_slide  .swiper-wrapper .slide3 {background-image:url(../images/slide_bg03.jpg);}
+#wrap .visual  #visual_slide  .swiper-wrapper .slide4 {background-image:url(../images/slide_bg04.jpg);}
+/* visual end */

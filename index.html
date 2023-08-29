@@ -4,8 +4,367 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>화이자</title>
+    <meta name="keywords" content="화이자, 제약회사, 바이오, 웹디자인, 웹퍼블리셔">
+    <meta name="description" content="화이자 리디자인 홈페이지입니다.">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"> 
+    <!-- style -->
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <!-- slide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- fullpage -->
+    <link rel="stylesheet" href="./style/jquery.fullPage.css">
 </head>
 <body>
-    
+    <header>
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="pfizer"></a></h1>
+        <nav>
+            <div class="sub_bg"></div>
+            <ul id="gnb">
+                <li>
+                    <a href="#">회사 소개</a>
+                    <ul class="sub">
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">연구 개발</a>
+                    <ul class="sub">
+                        <li><a href="#">주요의약품</a></li>
+                        <li><a href="#">제품 파이프라인</a></li>
+                        <li><a href="#">한국화이자제약R&D</a></li>
+                        <li><a href="#">연도별 활동</a></li>
+                        <li><a href="#">성과</a></li>
+                        <li><a href="#">앞으로의 방향</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제품 정보</a></li>
+                <li>
+                    <a href="#">사회 공헌</a>
+                    <ul class="sub">
+                        <li><a href="#">화이자 사랑의 장학금</a></li>
+                        <li><a href="#">의학연구지원</a></li>
+                        <li><a href="#">R&D University</a></li>
+                        <li><a href="#">환자 지원활동</a></li>
+                        <li><a href="#">지역사회 기원</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">화이자 소식</a></li>
+            </ul>
+        </nav>
+        <div class="lnb">
+            <a class="header_search" href="#"><img src="./images/icon_search_222.png" alt="검색"></a>
+            <a class="lang" href="#"><img src="./images/icon_lang.png" alt="언어"><span>KO</span></a>
+            <a class="m_nav_btn" href="#"><span></span><span></span></a>
+        </div>
+        <div class="m_nav_open">
+            <ul id="m_gnb">
+                <li>
+                    <a href="#"><span>회사 소개</span><img src="./images/icon_sub_more.png" alt="더보기"></a>
+                    <ul class="sub">
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">핵심가치</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span>연구 개발</span><img src="./images/icon_sub_more.png" alt="더보기"></a>
+                    <ul class="sub">
+                        <li><a href="#">주요의약품</a></li>
+                        <li><a href="#">제품 파이프라인</a></li>
+                        <li><a href="#">한국화이자제약R&D</a></li>
+                        <li><a href="#">연도별 활동</a></li>
+                        <li><a href="#">성과</a></li>
+                        <li><a href="#">앞으로의 방향</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>제품 정보</span></a></li>
+                <li>
+                    <a href="#"><span>사회 공헌</span><img src="./images/icon_sub_more.png" alt="더보기"></a>
+                    <ul class="sub">
+                        <li><a href="#">화이자 사랑의 장학금</a></li>
+                        <li><a href="#">의학연구지원</a></li>
+                        <li><a href="#">R&D University</a></li>
+                        <li><a href="#">환자 지원활동</a></li>
+                        <li><a href="#">지역사회 기원</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>화이자 소식</span></a></li>
+            </ul>
+        </div><!-- m_nav_open -->
+        <div class="search_open">
+            <form action="#" id="search_frm" method="get">
+                <fieldset>
+                    <legend class="skip">검색양식</legend>
+                    <input type="search" name="search_input" id="search_input" placeholder="검색어를 입력해주세요.">
+                    <button type="button" id="search_btn"><img src="./images/search_open.png" alt=""></button>
+                </fieldset>
+            </form>
+        </div><!-- search_open end -->
+    </header>
+    <main>
+        <div id="wrap">
+            <div class="section visual">
+                <div class="swiper" id="visual_slide">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide1"><h1><span>환자들의 삶을</span><em>변화시키는 혁신</em></h1></div>
+                        <div class="swiper-slide slide2"><h1><span>과학과 소통으로</span><em>건강한 미래를 창조</em></h1></div>
+                        <div class="swiper-slide slide3"><h1><span>환자 중심의 변화</span><em>더 나은 미래를 위해</em></h1></div>
+                        <div class="swiper-slide slide4"><h1><span>건강한 삶을 위한</span><em>혁신적인 파트너십</em></h1></div>
+                    </div>
+                </div><!-- swiper end -->
+            </div><!-- section1 end -->
+            <div class="section research">
+                <div class="container">
+                    <div class="title">
+                        <h2><em>Research</em><span>연구개발</span></h2>
+                        <p class="more"><span>view more</span><img src="./images/icon_more.png" alt=""></p>
+                    </div><!-- title end -->
+                    <div class="contents">
+                        <div class="left"></div>
+                        <div class="right">
+                            <a href="#" class="research_con con1">
+                                <div class="txt">
+                                    <h3>주요 의약품</h3>
+                                    <p class="desc">화이자 제약은 끊임없는 연구개발로 기술 경쟁력에서 앞서갑니다.</p>
+                                </div>
+                                <p class="icon"><img src="./images/research_01.png" alt=""></p>
+                            </a>
+                            <a href="#" class="research_con con2">
+                                <div class="txt">
+                                    <h3>제품 파이프라인</h3>
+                                    <p class="desc">화이자 제약은 창의적이고 혁신적인 바이오 신약 파이프라인 개발을<br>하고 있으며, 또한 이를 위한 다양한 파트너들과의 소통에 언제든지 열려있습니다.  </p>
+                                </div>
+                                <p class="icon"><img src="./images/research_02.png" alt=""></p>
+                            </a>
+                            <a href="#" class="research_con con3">
+                                <div class="txt">
+                                    <h3>한국화이자 제약 R&D</h3>
+                                    <p class="desc">화이자는 임상 프로그램의 진전을 위한  의약품 및 백신의 구성과 개발에 있어<br>선도적인 역량을 발휘하고 있습니다.</p>
+                                </div>
+                                <p class="icon"><img src="./images/research_03.png" alt=""></p>
+                            </a>
+                        </div><!-- right end -->
+                    </div><!-- contents end -->
+                </div><!-- container end -->
+            </div>
+            <div class="section drug">
+                <div class="container">
+                    <div class="title">
+                        <h2>
+                            <em>Pfizer Drug Development</em>
+                            <span>화이자 제약 제품</span>
+                        </h2>
+                        <p class="more"><span>view more</span><img src="./images/icon_more.png" alt=""></p>
+                    </div>
+                    <div class="contents">
+                        <a href="#">
+                            <h3>VACCINE</h3>
+                            <p class="hover">백신</p>
+                            <p class="icon_show"><img src="./images/icon_01_vaccine.png" alt=""></p>
+                            <p class="icon_hover"><img src="./images/icon_01_vaccine_hover.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <h3>ANTICANCER</h3>
+                            <p class="hover">항암제</p>
+                            <p class="icon_show"><img src="./images/icon_02_anticancer.png" alt=""></p>
+                            <p class="icon_hover"><img src="./images/icon_03_hormone_hover.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <h3>HORMONE</h3>
+                            <p class="hover">호르몬제</p>
+                            <p class="icon_show"><img src="./images/icon_03_hormone.png" alt=""></p>
+                            <p class="icon_hover"><img src="./images/icon_03_hormone_hover.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <h3>ANTIBIOTICS</h3>
+                            <p class="hover">항생제</p>
+                            <p class="icon_show"><img src="./images/icon_04_antibiotics.png" alt=""></p>
+                            <p class="icon_hover"><img src="./images/icon_04_antibiotics_hover.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <h3>IMMUNITY</h3>
+                            <p class="hover">면역/이식치료제</p>
+                            <p class="icon_show"><img src="./images/icon_05_immunity.png" alt=""></p>
+                            <p class="icon_hover"><img src="./images/icon_05_immunity_hover.png" alt=""></p>
+                        </a>
+                        <a href="#">
+                            <h3>OTHER DRUGS</h3>
+                            <p class="hover">기타</p>
+                            <p class="icon_show"><img src="./images/icon_06_other.png" alt=""></p>
+                            <p class="icon_hover"><img src="./images/icon_06_other_hover.png" alt=""></p>
+                        </a>
+                    </div><!-- contents end -->
+                </div><!-- container end -->
+            </div> 
+            <div class="section news">
+                <div class="container">
+                    <div class="tittle">
+                        <h2><em>News & Notice</em><span>화이자 제약에서<br>최신 소식과 정보를 알려드립니다.</span></h2>
+                        <p class="more"><span>view more</span><img src="./images/icon_more.png" alt=""></p>
+                    </div>
+                    <div class="contents">
+                        <div class="bg_box"></div>
+                        <div class="swiper" id="news_slide">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide slide1">
+                                    <a href="#">
+                                        <p class="news_type">제품관련</p>
+                                        <h3>허가사항 변경명령(통일조정)에 따른 공고_팔보시클립 성분 제제(입랜스정/캡슐)</h3>
+                                        <p class="news_con">
+                                            항상 저희 한국화이자제약을 아껴주시는 여러 선생님들께 감사드립니다.
+                                            식품의약품안전처에서는 식약처 명령사항(의약품안전평가과-5772, 2023.08.16)에 의거하여 아래 사항을 변경하도록 지시하였습니다.
+                                            이에 따라 해당 제품의 제품설명서가 2023년 11월 16일자로 변경됨을 알려드리고자 합니다.
+                                        </p>
+                                        <p class="day">2023.08.22</p>
+                                        <p class="icon"><img src="./images/icon_news.png" alt=""></p>
+                                    </a>
+                                </div><!-- slide 1 end -->
+                                <div class="swiper-slide slide2">
+                                    <a href="#">
+                                        <p class="news_type">프레스센터</p>
+                                        <h3>한국화이자제약 환경과 임직원 지역사회 건강 모두 챙기는 그린 무브 (Green Moves)캠페인 진행</h3>
+                                        <p class="news_con">
+                                            한국화이자제약(대표이사 사장 오동욱)이 지난 16일 환경보호와 건강증진을 위한 ‘그린 무브(Green Moves) 캠페인’의 일환으로, 임직원들이 참여하는 남산 그린짐 활동을 진행했다고 밝혔다.
+                                            한국화이자제약은 지난해 ESG 이니셔티브 '더 건강한 세상을 위한 움직임(Moves for a Healthier World)’을 선포하고 첫번째 활동으로 그린 무브 캠페인을 선보였다. 그린 무브 캠페인은 도시숲에서의 환경보호 활동을 통해 신체적 건강, 심리적 안정감을 향상시켜 개인, 자연, 지역사회의 건강을 모두 제고하는 그린짐 활동을 지원하고 동참하는 캠페인이다.
+                                        </p>
+                                        <p class="day">2023.06.20</p>
+                                        <p class="icon"><img src="./images/icon_news.png" alt=""></p>
+                                    </a>
+                                </div><!-- slide 2 end -->
+                                <div class="swiper-slide slide3">
+                                    <a href="#">
+                                        <p class="news_type">공지사항</p>
+                                        <h3>로비큐아캡슐 전액본인부담 환자의 약제비 환급ㆍ지원 사업 안내문</h3>
+                                        <p class="news_con">
+                                            한국화이자제약 주식회사(이하 화이자)는 로비큐아캡슐 전액 본인 부담 환자분들을 대상으로 약제비 환급 및 지원 사업을 시행하고 있습니다. 하기 안내 사항을 확인하신 후 신청 부탁 드립니다.
+                                            개인정보 위탁 기관은 에임메드㈜입니다.
+                                        </p>
+                                        <p class="day">2023.06.17</p>
+                                        <p class="icon"><img src="./images/icon_news.png" alt=""></p>
+                                    </a>
+                                </div><!-- slide 3 end -->
+                                <div class="swiper-slide slide4">
+                                    <a href="#">
+                                        <p class="news_type">프레스센터</p>
+                                        <h3>제21회 ‘화이자의학상’ 수상 후보자 공모</h3>
+                                        <p class="news_con">
+                                            대한민국의학한림원(원장 왕규창)과 한국화이자제약(대표이사 사장 오동욱)은 오는 7월 31일까지 제21회 화이자의학상 수상자 후보를 공모한다고 밝혔다.
+                                            ‘화이자의학상(Pfizer Medical Research Award)’은 대한민국의학한림원이 주관하고 한국화이자제약이 후원하는 권위있는 순수의학상으로, 국내 의학계 발전을 지원하고 기업시민으로서 책임을 다하기 위해 한국화이자제약 창립 30주년인 1999년 제정되었다. 올해로 21회차를 맞이한 화이자의학상은 현재까지 우수한 연구성과를 낸 의과학자 49 명을 발굴하여, 의료계의 연구의지를 고취해왔다.
+                                        </p>
+                                        <p class="day">2023.06.07</p>
+                                        <p class="icon"><img src="./images/icon_news.png" alt=""></p>
+                                    </a>
+                                </div><!-- slide 4 end -->
+                                <div class="swiper-slide slide5">
+                                    <a href="#">
+                                        <p class="news_type">제품관련</p>
+                                        <h3>허가사항 변경명령(재심사)에 따른 공고_젤잔즈정5mg, 젤잔즈XR서방정11mg</h3>
+                                        <p class="news_con">
+                                            항상 저희 한국화이자제약을 아껴주시는 여러 선생님들께 감사드립니다.
+                                            식품의약품안전처에서는 식약처 명령사항(의약품안전평가과-3166, 2023.5.8)에 의거하여 아래 사항을 변경하도록 지시하였습니다.
+                                            이에 따라 해당 제품의 제품설명서가 2023년 08월 08일자로 변경됨을 알려드리고자 합니다.
+                                        </p>
+                                        <p class="day">2023.05.18</p>
+                                        <p class="icon"><img src="./images/icon_news.png" alt=""></p>
+                                    </a>
+                                </div><!-- slide 5 end -->
+                                <div class="swiper-slide slide6">
+                                    <a href="#">
+                                        <p class="news_type">공지사항</p>
+                                        <h3>비아트리스 코리아(주) 제품 정보 관련 문의 안내</h3>
+                                        <p class="news_con">
+                                            비아트리스 코리아㈜ (Viatris Korea)는 글로벌 화이자의 사업부문이었던 업존(Upjohn)과 글로벌 헬스케어 기업 마일란(Mylan)의 기업 결합으로 2020년 11월에 출범한 비아트리스의 한국 법인입니다. 
+                                            비아트리스 코리아㈜의 출범에 따라 아래 나열된 제품 수입허가권은 2022년 4월 6일자로 한국화이자제약㈜로부터 비아트리스 코리아㈜로 양도양수 완료됐습니다. 비아트리스 코리아㈜ 제품*의 최신 정보는 비아트리스 코리아㈜의 홈페이지 (https://www.viatris.co.kr/)를 통해 확인 가능하며, 관련 제품의 공급은 기존과 동일하게 유지됩니다.
+                                        </p>
+                                        <p class="day">2023.05.18</p>
+                                        <p class="icon"><img src="./images/icon_news.png" alt=""></p>
+                                    </a>
+                                </div><!-- slide 6 end -->
+                            </div><!-- swiper_wrapper end -->
+                        </div><!-- swiper end -->
+                    </div><!-- right end -->
+                </div><!-- container end -->
+            </div><!-- news end -->
+            <div class="section contribution">
+                <div class="container">
+                    <div class="title">
+                        <h2><em>Social contribution</em><span>사회공헌</span></h2>
+                        <p class="more"><span>view more</span><img src="./images/icon_more.png" alt=""></p>
+                    </div>
+                    <div class="contents">
+                        <div class="swiper" id="contribution_slide">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide slide1">
+                                    <p class="img"><!-- bg --></p>
+                                    <h3>2023 화이자 사랑의 장학금</h3>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <p class="img"><!-- bg --></p>
+                                    <h3>한국화이자 '청년 장애인 일경험 프로그램' 참여</h3>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <p class="img"><!-- bg --></p>
+                                    <h3>Support for Medical Research 의학 연구 지원​​​​</h3>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <p class="img"><!-- bg --></p>
+                                    <h3>R&D University R&D 유니버시티​​​​</h3>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <p class="img"><!-- bg --></p>
+                                    <h3>레드타이 챌린지​</h3>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <p class="img"><!-- bg --></p>
+                                    <h3>Love Action(소아암 환자), 환우회 기부​</h3>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div><!-- swiper end -->
+                    </div><!-- contents end -->
+                </div><!-- container end -->
+            </div><!-- contribution end -->
+        </div><!-- wrap end -->
+    </main>
+    <footer>
+        <div class="f_top">
+            <p class="logo"><img src="./images/logo.png" alt="pfizer"></p>
+            <div class="fnb">
+                <a href="#">찾아오시는 길</a>
+                <a href="#">사이트맵</a>
+                <a href="#">한국화이자제약 개인정보처리방침</a>
+                <a href="#">개인정보보호법 교육자료</a>
+                <a href="#">이용약관</a>
+            </div>
+        </div><!-- f_top end -->
+        <div class="f_btm">
+            <p class="copy">© Pfizer Ltd. 2007-2021 All rights reserved. The products discussed herein may have different labeling in different countries.
+                This information – including product information – is intended only for residents of the Republic of Korea.</p>
+            <div class="sns">
+                <a href="#"><img src="./images/sns_facebook.png" alt="facebook"></a>
+                <a href="#"><img src="./images/sns_linkedin.png" alt="linkedin"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script/jquery.fullPage.js"></script>
+    <script src="./script/common.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
