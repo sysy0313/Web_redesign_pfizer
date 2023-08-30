@@ -12,7 +12,7 @@ header h1 a img {width:100%;}
 /* nav */
 header nav {}
 header nav .sub_bg {
-    z-index:50;
+    z-index:150;
     position:absolute; left:0; top:0;
     width:100%; height:0px; 
     background:rgba(255,255,255,0.7); 
@@ -31,16 +31,27 @@ header nav #gnb > li > a {
     display:block; 
     font-size:1.25rem; font-weight:500; padding:10px 20px;
     margin-right:40px; 
+    position:relative;
+}
+header nav #gnb > li > a::after {
+    content:''; display:block; left:0;
+    width:100%; height:2px; background:#2B01BE;
+    position:absolute; bottom:-2px;
+    transform:scale(0); transition:transform 0.3s linear;
+}
+header nav #gnb > li:hover > a::after {
+    transform:scale(1)
 }
 header nav #gnb > li > .sub {
-    z-index:100;
-    position:absolute; top:70px; left:0; transform:translateX(-22px);
+    z-index:200;
+    position:absolute; top:70px; left:0; transform:translateX(-22px) scale(0);
     width:100%;
     text-align:center;
     font-size:1.125rem; letter-spacing:-0.02em;
-    padding-top:10px; height:0; overflow:hidden;
+    padding-top:10px; 
+    
 }
-header nav #gnb > li > .sub.open {height:auto; }
+header nav #gnb > li > .sub.open {transform:translateX(-22px) scale(1); transition-delay:0.2s;} 
 header nav #gnb > li > .sub.hide {display:none;}
 header nav #gnb > li > .sub li {margin-bottom:30px;}
 header nav #gnb > li > .sub li:last-child {margin-bottom:0;}
@@ -119,7 +130,7 @@ header .search_open.open {
     transform:translateY(0);
 }
 header .search_open #search_frm {
-    width:100%; background:linear-gradient(90deg, #2B01BE 0%, #1B0078 100%);
+    width:100%; background:linear-gradient(90deg, #0190FF 0%, #1B0078 100%);
     height:60px; width:50%; border-radius:5px;
     display:flex; justify-content:center; align-items:center;
 }

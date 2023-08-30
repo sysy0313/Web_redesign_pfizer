@@ -1,7 +1,7 @@
 // index js
 $('#wrap').fullpage({
     scrollBar:true,
-    scrollingSpeed:1000,
+    scrollingSpeed:700,
     navigation:true,
     navigationTooltips:['main','연구제품','제약제품','최신소식','사회공헌']
 })
@@ -57,6 +57,22 @@ drug_box.forEach(function(target, index){
         icon_hover[index].style.display = 'none'
     })
 })
+// research
+const research_hover = document.querySelectorAll('.research .hover')
+const research_icon = document.querySelectorAll('.research .icon')
+const research_a = document.querySelectorAll('.research_con')
+for(let i of research_hover){i.style.display = 'none'}
+research_a.forEach(function(target, index){
+    target.addEventListener('mouseover',function(){
+        research_hover[index].style.display = 'block'
+        research_icon[index].style.display = 'none'
+    });
+    target.addEventListener('mouseout',function(){
+        research_icon[index].style.display = 'block'
+        research_hover[index].style.display = 'none'
+    })
+})
+
 //news_slide
 const news_slide = new Swiper('#news_slide',{
     autoplay:{

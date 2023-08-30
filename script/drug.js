@@ -20,4 +20,15 @@ cat.forEach(function(target, index){
         icon_show[0].style.display = 'none'
     })
 })
+// 스크롤트리거
+gsap.fromTo('.bnr h1', {
+    //from
+    opacity:0,
+},{
+    //to
+    opacity:1,
+    duration:2,
+    scrollTrigger:'.bnr'
+}
+);
 
