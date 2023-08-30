@@ -1,25 +1,31 @@
-main {}
+main {overflow:hidden;}
 #wrap {}
 /* ---------------visual--------------- */
 #wrap .visual {}
 #wrap .visual  #visual_slide {}
 #wrap .visual  #visual_slide  .swiper-wrapper {}
 #wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide {
-    background-size:cover; background-repeat:no-repeat; background-position:center; 
+    background-size:cover; background-repeat:no-repeat; background-position:center;
     height:100vh;
     display:flex; justify-content:flex-end; align-items:center;
-    padding-right:10%;
+    padding-right:10%; 
 }
-#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 {text-align:right; }
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 {
+    text-align:right;
+}
 #wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 span {
     display:block;
     font-size:3.75rem; letter-spacing:-0.02em; line-height:90px;
+    transition:all 2s;
+    opacity:0; transform:translateX(80px);
 }
 #wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 em {
     display:block;
     font-size:4.688rem; letter-spacing:-0.02em; font-weight:500;
     line-height:90px;
     color:#1A0077;
+    transition:all 2s 0.3s;
+    opacity:0; transform:translateX(80px);
 }
 #wrap .visual  #visual_slide  .swiper-wrapper .slide1 {background-image:url(../images/slide_bg01.jpg);}
 #wrap .visual  #visual_slide  .swiper-wrapper .slide2 {background-image:url(../images/slide_bg02.jpg);}
@@ -140,10 +146,14 @@ main {}
     background: linear-gradient(180deg, #FFF 0%, #eee 70%, #bbb 100%);
     position:relative;
 }
+#wrap .news .bg_box {
+    width:40%; height:500px;
+    background:linear-gradient(90deg, #2B01BE 0%, #1B0078 100%);
+    position:absolute; right:0%; top:50%; transform:translateY(-50%)
+}
 #wrap .news .container {
     width:1410px; margin:0 auto;
     display:flex;
-    
 }
 #wrap .news .container .title {width:30%;}
 #wrap .news .container .title h2 {margin-bottom:60px;}
@@ -164,11 +174,6 @@ main {}
 #wrap .news .container .title .more img {}
 #wrap .news .container .contents {
     width:70%;
-}
-#wrap .news .container .contents .bg_box {
-    width:40%; height:500px;
-    background:linear-gradient(90deg, #2B01BE 0%, #1B0078 97.98%);
-    position:absolute; right:0; top:50%; transform:translateY(-50%)
 }
 #wrap .news .container .contents #news_slide {}
 #wrap .news .container .contents #news_slide .swiper-wrapper {
@@ -229,13 +234,14 @@ main {}
     width:15px; height:15px;
 }
 #wrap .contribution .container .contents {}
-#wrap .contribution .container .contents #contribution_slide {}
-#wrap .contribution .container .contents #contribution_slide .swiper-wrapper {}
-#wrap .contribution .container .contents #contribution_slide .swiper-wrapper .swiper-slide {text-align:center;}
+#wrap .contribution .container .contents #contribution_slide { }
+#wrap .contribution .container .contents #contribution_slide .swiper-wrapper {padding:50px 0;}
+#wrap .contribution .container .contents #contribution_slide .swiper-wrapper .swiper-slide {text-align:center; }
+#wrap .contribution .container .contents #contribution_slide .swiper-wrapper .swiper-slide .img:hover {background-size:180%;}
 #wrap .contribution .container .contents #contribution_slide .swiper-wrapper .swiper-slide .img {
-    display:block;
-    height: 400px; background-size:cover; background-repeat:no-repeat; background-position:center; 
-    margin-bottom:20px;
+    display:block; 
+    height: 400px; background-repeat:no-repeat; background-position:center; 
+    margin-bottom:20px; background-size:cover;
 }
 #wrap .contribution .container .contents #contribution_slide .swiper-wrapper .slide1 .img {background-image:url(../images/contribution_01.jpg)}
 #wrap .contribution .container .contents #contribution_slide .swiper-wrapper .slide2 .img {background-image:url(../images/contribution_02.jpg)}
@@ -246,4 +252,4 @@ main {}
 #wrap .contribution .container .contents #contribution_slide .swiper-wrapper .swiper-slide h3 {
     font-size:1.25rem; letter-spacing:-0.04em; font-weight:500;
 }
-#wrap .contribution .container .contents #contribution_slide .swiper-pagination {}
+#wrap .contribution .container .contents #contribution_slide .swiper-pagination {transform:translateY(0)}

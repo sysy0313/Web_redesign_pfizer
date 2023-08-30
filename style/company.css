@@ -1,0 +1,190 @@
+/* 제목 */
+main {}
+main .bnr {
+    width:100%; height:400px;
+    background:url(../images/company_bnr.jpg) no-repeat fixed 0% ;
+    background-size:cover;
+    display:flex; justify-content:center; align-items:center;
+    margin-bottom:25px;
+}
+main .bnr h1 {}
+main .bnr h1 span {
+    font-size:4rem; font-weight:500; color:rgba(0,0,0,0.7);
+}
+main .bnr h1 em {
+    font-size:4rem; font-weight:700; color:rgba(1,144,255,0.7)
+}
+/* 내용 */
+main .wrap {}
+/* 탭제목 */
+main .wrap .tab_title {
+    display:flex; justify-content:center;
+    margin-bottom:100px; border-bottom:1px solid #eee;
+}
+main .wrap .tab_title a {
+    font-size:1.25rem; letter-spacing:-0.02em; font-weight:500;
+    margin-right:40px;
+    display:block; padding:10px; 
+}
+main .wrap .tab_title a:last-child {margin-right:0;}
+main .wrap .tab_title .active {
+    color:#2B01BE; border-bottom:3px solid #2B01BE;
+}
+main .wrap .tab_container {}
+main .wrap .tab_container > * {margin-bottom:100px;}
+main .wrap .tab_container section.active {display:block important;}
+/* -----------기업소개------------ */
+main .wrap .tab_container #intro {}
+main .wrap .tab_container #intro .title {text-align:center; margin-bottom:70px;}
+main .wrap .tab_container #intro .title h1 {
+    font-size:2.438rem; letter-spacing:-0.02em; font-weight:500;
+    color:#1A0077;
+    margin-bottom:70px;
+}
+main .wrap .tab_container #intro .title p {
+    font-size:1.938rem; letter-spacing:-0.02em; line-height:45px;
+}
+main .wrap .tab_container #intro .contents {}
+main .wrap .tab_container #intro .contents .con {
+    height:550px;
+    display:flex; justify-content:flex-end; align-items:center;
+}
+main .wrap .tab_container #intro .contents .con1 {background:#f1f1f1;}
+main .wrap .tab_container #intro .contents .con2 {}
+main .wrap .tab_container #intro .contents .con3 {background:#f1f1f1;}
+main .wrap .tab_container #intro .contents .con4 {}
+main .wrap .tab_container #intro .contents .con .photo {
+    height:100%; width:40%;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+main .wrap .tab_container #intro .contents .con1 .photo {background-image:url(../images/company_01.jpg); border-bottom-right-radius:50px;}
+main .wrap .tab_container #intro .contents .con2 .photo {background-image:url(../images/company_02.jpg); border-bottom-left-radius:50px;}
+main .wrap .tab_container #intro .contents .con3 .photo {background-image:url(../images/company_03.jpg); border-bottom-right-radius:50px;}
+main .wrap .tab_container #intro .contents .con4 .photo {background-image:url(../images/company_04.jpg); border-bottom-left-radius:50px;}
+main .wrap .tab_container #intro .contents .con .txt {
+    width:60%; 
+}
+main .wrap .tab_container #intro .contents .con1 .txt {padding:0 300px 0 120px;}
+main .wrap .tab_container #intro .contents .con3 .txt {padding:0 300px 0 120px;}
+main .wrap .tab_container #intro .contents .con2 .txt {padding:0 120px 0 300px;}
+main .wrap .tab_container #intro .contents .con4 .txt {padding:0 120px 0 300px;}
+main .wrap .tab_container #intro .contents .con .txt h2 {
+    font-size:2.50rem; letter-spacing:-0.02em; font-weight:700; line-height:55px;
+    color:#1A0077;
+    margin-bottom:50px;
+}
+main .wrap .tab_container #intro .contents .con .txt p {
+    
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:40px;
+}
+/* ---------------핵심가치--------------- */
+main .wrap .tab_container #value {}
+main .wrap .tab_container #value .title {text-align:center; margin-bottom:70px;}
+main .wrap .tab_container #value .title .top {margin-bottom:100px;}
+main .wrap .tab_container #value .title .btm {}
+main .wrap .tab_container #value .title h2 {
+    font-size:2.438rem; letter-spacing:-0.02em; font-weight:500;
+    color:#1A0077;
+    margin-bottom:70px;
+}
+main .wrap .tab_container #value .title p {
+    font-size:1.938rem; letter-spacing:-0.02em; line-height:45px;
+}
+main .wrap .tab_container #value .contents {}
+main .wrap .tab_container #value .contents .top {
+    display:flex; justify-content:center; margin-bottom:5px;
+}
+main .wrap .tab_container #value .contents .btm {
+    display:flex; justify-content:center;
+}
+main .wrap .tab_container #value .contents .box {
+    width:400px; height:400px; text-align:center;
+    display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;
+}
+main .wrap .tab_container #value .contents .box:first-child {margin-right:5px;}
+main .wrap .tab_container #value .contents .box_blue {
+    background: linear-gradient(180deg, #2B01BE 0%, #1A0077 100%);
+}
+main .wrap .tab_container #value .contents .box_navy {
+    background: linear-gradient(180deg, #1A0077 0%, #0B0031 100%);
+}
+main .wrap .tab_container #value .contents .box > * {margin-bottom:30px;}
+main .wrap .tab_container #value .contents .box > *:last-child {margin-bottom:0;}
+main .wrap .tab_container #value .contents .box .icon {}
+main .wrap .tab_container #value .contents .box .icon img {}
+main .wrap .tab_container #value .contents .box h3 {
+    font-size:1.938rem; letter-spacing:-0.02em; color:#fff;
+}
+main .wrap .tab_container #value .contents .box .desc {
+    letter-spacing:-0.02em; color:#fff;
+    line-height:30px; padding:0 50px;;
+}
+/* -------------연혁----------------- */
+main .wrap .tab_container #histroy {}
+main .wrap .tab_container #histroy h1 {
+    font-size:3.125rem; letter-spacing:-0.02em; font-weight:500;
+    color:#1A0077; margin-bottom:70px; text-align:center;
+}
+main .wrap .tab_container #histroy .wrap {}
+main .wrap .tab_container #histroy .wrap .period {margin-bottom:100px;}
+main .wrap .tab_container #histroy .wrap .period1 .title {background-image:url(../images/history_01.jpg);}
+main .wrap .tab_container #histroy .wrap .period1 .photo {background-image:url(../images/history_01_photo.jpg);}
+main .wrap .tab_container #histroy .wrap .period2 .title {background-image:url(../images/history_02.jpg);}
+main .wrap .tab_container #histroy .wrap .period2 .photo {background-image:url(../images/history_02_photo.jpg)}
+main .wrap .tab_container #histroy .wrap .period3 .title {background-image:url(../images/history_03.jpg);}
+main .wrap .tab_container #histroy .wrap .period3 .photo {background-image:url(../images/history_03_photo.jpg);}
+main .wrap .tab_container #histroy .wrap .period .title {
+    height:400px;
+    background-repeat:no-repeat; background-size:cover; background-position:center;
+    background-attachment:fixed;
+    display:flex; flex-flow:column nowrap; align-items:center; justify-content:space-between;
+    padding:10px;
+}
+main .wrap .tab_container #histroy .wrap .period .title h2 {
+    font-size:2.438rem; letter-spacing:-0.02em;
+    color:rgba(255,255,255,0.7);
+}
+main .wrap .tab_container #histroy .wrap .period .title p {
+    font-size:10rem; letter-spacing:-0.02em; font-weight:700;
+    color:rgba(255,255,255,0.7);
+}
+/* 내용 */
+main .wrap .tab_container #histroy .wrap .period .contents {
+    width:1410px; margin:0 auto; padding:40px 0; 
+    display:flex; justify-content:space-between;
+}
+main .wrap .tab_container #histroy .wrap .period .contents .photo {
+    width:40%; height:300px; margin-right:60px;
+}
+main .wrap .tab_container #histroy .wrap .period .contents .txt {
+    width:60%;
+}
+main .wrap .tab_container #histroy .wrap .period .contents .txt dl {
+    display:flex; 
+    margin-bottom:30px; 
+}
+main .wrap .tab_container #histroy .wrap .period .contents .txt dl dt {
+    letter-spacing:-0.02em; font-weight:500; color:#2B01BE;
+    margin-right:20px; line-height:25px;
+}
+main .wrap .tab_container #histroy .wrap .period .contents .txt dl dd {}
+main .wrap .tab_container #histroy .wrap .period .contents .txt dl dd p {
+    letter-spacing:-0.02em; line-height:25px;
+}
+/* -----------map----------------- */
+main .wrap .tab_container #map_section {}
+main .wrap .tab_container #map_section .title {margin-bottom:50px; text-align:center;}
+main .wrap .tab_container #map_section .title h1 {
+    font-size:3.125rem; letter-spacing:-0.02em; font-weight:500; 
+    color:#1A0077;
+    margin-bottom:70px;
+}
+main .wrap .tab_container #map_section .title p {
+    font-size:1.563rem; letter-spacing:-0.02em; line-height:45px;
+}
+main .wrap .tab_container #map_section .contents {}
+main .wrap .tab_container #map_section .contents #map {
+    width:1410px; height:750px; margin:0 auto;
+    background:lightblue;
+}

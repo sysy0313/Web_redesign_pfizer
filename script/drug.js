@@ -1,0 +1,23 @@
+// drug js
+const icon_hover = document.querySelectorAll('.hover')
+const icon_show = document.querySelectorAll('.show')
+const cat = document.querySelectorAll('.cat a')
+const active =document.querySelector('.active')
+for(let i of icon_hover){i.style.display = 'none'}
+icon_hover[0].style.display = 'block'
+icon_show[0].style.display = 'none'
+cat.forEach(function(target, index){
+    target.addEventListener('mouseover',function(){
+        icon_show[index].style.display = 'none';
+        icon_hover[index].style.display = 'block';
+        icon_hover[0].style.display = 'block'
+        icon_show[0].style.display = 'none'
+    })
+    target.addEventListener('mouseout',function(){
+        icon_hover[index].style.display = 'none';
+        icon_show[index].style.display = 'block';
+        icon_hover[0].style.display = 'block'
+        icon_show[0].style.display = 'none'
+    })
+})
+

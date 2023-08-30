@@ -13,7 +13,30 @@ const visual_slide = new Swiper('#visual_slide',{
     }, //자동재생
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
     effect:'fade',// effect:'fade', //제자리 자연스러운 변경 슬라이드 효과
-    
+    on:{
+        init:function(){
+            //슬라이드가 변경되기 전 초기 실행함수
+            this.slides[this.activeIndex].querySelector('.visual_txt span').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt em').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt span').style.transform = 'translateX(0)'
+            this.slides[this.activeIndex].querySelector('.visual_txt em').style.transform = 'translateX(0)'
+        },
+        slideChange:function(){
+            //슬라이드 변경될 때 인식되는 실행함수
+            //1. 활성화 전 모든 슬라이드 opacity:0; 만들기
+            this.slides.forEach(target => {
+                target.querySelector('.visual_txt span').style.opacity = '0'
+                target.querySelector('.visual_txt em').style.opacity = '0'
+                target.querySelector('.visual_txt span').style.transform = 'translateX(80px)'
+                target.querySelector('.visual_txt em').style.transform = 'translateX(80px)'
+            })
+            //2. 활성화 슬라이드만 opacity:1
+            this.slides[this.activeIndex].querySelector('.visual_txt span').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt em').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt span').style.transform = 'translateX(0)'
+            this.slides[this.activeIndex].querySelector('.visual_txt em').style.transform = 'translateX(0)'
+        }
+    },
 });
 // drug_hover
 const drug_box = document.querySelectorAll('.drug .contents a')
@@ -56,4 +79,56 @@ const contribution_slide = new Swiper('#contribution_slide',{
     effect:'horizontal',
     slidesPerView:3,
     spaceBetween:30,
+    pagination: {
+        el: '#contribution_slide .swiper-pagination',
+    },
 });
+// 스크롤트리거
+gsap.fromTo('.research .container', {
+    //from
+    opacity:0,
+    x:400, 
+},{
+    //to
+    opacity:1,
+    x:0,
+    duration:1.5,
+    scrollTrigger:'.research'
+}
+);
+gsap.fromTo('.drug .container', {
+    //from
+    opacity:0,
+    x:400, 
+},{
+    //to
+    opacity:1,
+    x:0,
+    duration:1.5,
+    scrollTrigger:'.drug'
+}
+);
+gsap.fromTo('.news .container', {
+    //from
+    opacity:0,
+    x:400, 
+},{
+    //to
+    opacity:1,
+    x:0,
+    duration:1.5,
+    scrollTrigger:'.news'
+}
+);
+gsap.fromTo('.contribution .container', {
+    //from
+    opacity:0,
+    x:400, 
+},{
+    //to
+    opacity:1.5,
+    x:0,
+    duration:1,
+    scrollTrigger:'.contribution'
+}
+);

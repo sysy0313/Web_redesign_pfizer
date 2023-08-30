@@ -1,0 +1,136 @@
+/* 연구개발 css */
+main {}
+main .bnr {
+    width:100%; height:400px;
+    background:url(../images/research_bnr.jpg) no-repeat fixed 50% 100% ;
+    background-size:cover;
+    display:flex; justify-content:center; align-items:center;
+    margin-bottom:100px;
+}
+main .bnr h1 {}
+main .bnr h1 span {
+    font-size:4rem; font-weight:500; color:rgba(0,0,0,0.7);
+}
+main .bnr h1 em {
+    font-size:4rem; font-weight:700; color:rgba(1,144,255,0.7)
+}
+/* title */
+main .title {text-align:center; margin-bottom:100px;}
+main .title h1 {
+    font-size:2.438rem; letter-spacing:-0.02em; font-weight:500;
+    color:#1A0077; margin-bottom:60px;
+}
+main .title p {
+    width:1000px; margin:0 auto;
+    font-size:1.563rem; letter-spacing:-0.02em; line-height:50px;
+}
+/* container */
+main .container {margin-bottom:200px;}
+main .container h1 {
+    font-size:2.438rem; letter-spacing:-0.02em; font-weight:500;
+    color:#1A0077; margin-bottom:80px; text-align:center;
+
+}
+main .container .contents {}
+/* 공통 */
+main .container .contents .con {position:relative; margin-bottom:80px;}
+main .container .contents .con:last-child {margin-bottom:0;}
+main .container .contents .con .bg_box {position:absolute; width:40%; height:90%; z-index:10; top:30%;}
+main .container .contents .con .con_box {
+    width:1300px; margin:0 auto;
+    display:flex; justify-content:space-between; align-items:center;
+    position:relative; z-index:20;
+}
+main .container .contents .con .con_box .txt {
+    width:40%;
+}
+main .container .contents .con .con_box .txt h2 {
+    margin-bottom:34px;
+}
+main .container .contents .con .con_box .txt h2 em {
+    display:block;
+    font-size:2.438rem; letter-spacing:-0.02em; font-weight:500;
+    line-height:36px;
+}
+main .container .contents .con .con_box .txt h2 span {
+    display:block;
+    font-size:1.563rem; letter-spacing:-0.02em;
+    line-height:36px;
+}
+main .container .contents .con .con_box .txt p {
+    font-size:1.25rem; letter-spacing:-0.02em; line-height:30px;
+}
+main .container .contents .con .con_box .txt p span {
+    line-height:30px; letter-spacing:-0.02em;
+}
+main .container .contents .con .con_box .photo {
+    width:50%; height:400px;
+}
+/* con1 */
+main .container .contents .con1 {}
+main .container .contents .con1 .bg_box {
+    background: linear-gradient(90deg, rgba(1, 144, 255, 0.50) 0%, rgba(26, 0, 119, 0.50) 100%);
+    right:0; 
+}
+main .container .contents .con1 .con_box {}
+main .container .contents .con1 .con_box .txt {}
+main .container .contents .con1 .con_box .txt h2 {}
+main .container .contents .con1 .con_box .txt h2 em {}
+main .container .contents .con1 .con_box .txt h2 span {}
+main .container .contents .con1 .con_box .photo {background-image:url(../images/research_01.jpg)}
+/* con2 */
+main .container .contents .con2 {}
+main .container .contents .con2 .bg_box {
+    background: linear-gradient(270deg, rgba(1, 144, 255, 0.50) 0%, rgba(26, 0, 119, 0.50) 100%);}
+main .container .contents .con2 .con_box {}
+main .container .contents .con2 .con_box .txt {}
+main .container .contents .con2 .con_box .txt h2 {}
+main .container .contents .con2 .con_box .txt h2 em {}
+main .container .contents .con2 .con_box .txt h2 span {}
+main .container .contents .con2 .con_box .photo {background-image:url(../images/research_02.jpg)}
+/* con3 */
+main .container .contents .con3 {}
+main .container .contents .con3 .bg_box {
+    background: linear-gradient(90deg, rgba(1, 144, 255, 0.50) 0%, rgba(26, 0, 119, 0.50) 100%);
+    right:0;
+}
+main .container .contents .con3 .con_box {}
+main .container .contents .con3 .con_box .txt {}
+main .container .contents .con3 .con_box .txt h2 {}
+main .container .contents .con3 .con_box .txt h2 em {}
+main .container .contents .con3 .con_box .txt h2 span {}
+main .container .contents .con3 .con_box .photo {background-image:url(../images/research_03.jpg)}
+/* con4 */
+main .container .contents .con4 {}
+main .container .contents .con4 .bg_box {
+    background: linear-gradient(270deg, rgba(1, 144, 255, 0.50) 0%, rgba(26, 0, 119, 0.50) 100%);
+}
+main .container .contents .con4 .con_box {}
+main .container .contents .con4 .con_box .txt {}
+main .container .contents .con4 .con_box .txt h2 {}
+main .container .contents .con4 .con_box .txt h2 em {}
+main .container .contents .con4 .con_box .txt h2 span {}
+main .container .contents .con4 .con_box .photo {background-image:url(../images/research_04.jpg)}
+/* con5 */
+main .container .contents .con5 {}
+main .container .contents .con5 .bg_box {
+    background: linear-gradient(90deg, rgba(1, 144, 255, 0.50) 0%, rgba(26, 0, 119, 0.50) 100%);
+    right:0;
+}
+main .container .contents .con5 .con_box {}
+main .container .contents .con5 .con_box .txt {}
+main .container .contents .con5 .con_box .txt h2 {}
+main .container .contents .con5 .con_box .txt h2 em {}
+main .container .contents .con5 .con_box .txt h2 span {}
+main .container .contents .con5 .con_box .photo {background-image:url(../images/research_05.jpg)}
+/* con6 */
+main .container .contents .con6 {}
+main .container .contents .con6 .bg_box {
+    background: linear-gradient(270deg, rgba(1, 144, 255, 0.50) 0%, rgba(26, 0, 119, 0.50) 100%);
+}
+main .container .contents .con6 .con_box {}
+main .container .contents .con6 .con_box .txt {}
+main .container .contents .con6 .con_box .txt h2 {}
+main .container .contents .con6 .con_box .txt h2 em {}
+main .container .contents .con6 .con_box .txt h2 span {}
+main .container .contents .con6 .con_box .photo {background-image:url(../images/research_06.jpg)}

@@ -1,0 +1,4 @@
+/* 반응형 css header*/
+@media screen and (max-width:1300px){
+    nav {display:none;}
+}

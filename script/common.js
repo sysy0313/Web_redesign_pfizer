@@ -1,4 +1,4 @@
-// header
+// header 스크롤
 window.addEventListener('scroll',function(){
     if(window.pageYOffset == 0){
         header.style.background = 'none'
@@ -31,6 +31,8 @@ const search_open = document.querySelector('.search_open')
     for(let i of gnb_sub){i.classList.add('open')}
     header.classList.add('sub')
 })} */
+
+
 nav.addEventListener('mouseover', function(){
     sub_bg.classList.add('open')
     for(let i of gnb_sub){i.classList.add('open')}

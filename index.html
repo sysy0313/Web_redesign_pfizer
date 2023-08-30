@@ -12,6 +12,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./style/common_responsive.css">
     <link rel="stylesheet" href="./style/index.css">
     <!-- slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
@@ -118,10 +119,10 @@
                 <div class="swiper" id="visual_slide">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide slide1"><h1><span>환자들의 삶을</span><em>변화시키는 혁신</em></h1></div>
-                        <div class="swiper-slide slide2"><h1><span>과학과 소통으로</span><em>건강한 미래를 창조</em></h1></div>
-                        <div class="swiper-slide slide3"><h1><span>환자 중심의 변화</span><em>더 나은 미래를 위해</em></h1></div>
-                        <div class="swiper-slide slide4"><h1><span>건강한 삶을 위한</span><em>혁신적인 파트너십</em></h1></div>
+                        <div class="swiper-slide slide1"><h1 class="visual_txt"><span>환자들의 삶을</span><em>변화시키는 혁신</em></h1></div>
+                        <div class="swiper-slide slide2"><h1 class="visual_txt"><span>과학과 소통으로</span><em>건강한 미래를 창조</em></h1></div>
+                        <div class="swiper-slide slide3"><h1 class="visual_txt"><span>환자 중심의 변화</span><em>더 나은 미래를 위해</em></h1></div>
+                        <div class="swiper-slide slide4"><h1 class="visual_txt"><span>건강한 삶을 위한</span><em>혁신적인 파트너십</em></h1></div>
                     </div>
                 </div><!-- swiper end -->
             </div><!-- section1 end -->
@@ -209,13 +210,13 @@
                 </div><!-- container end -->
             </div> 
             <div class="section news">
+                <div class="bg_box"></div>
                 <div class="container">
                     <div class="title">
                         <h2><em>News & Notice</em><span>화이자 제약에서<br>최신 소식과 정보를 알려드립니다.</span></h2>
                         <a href="#" class="more"><span>view more</span><img src="./images/icon_more.png" alt=""></a>
                     </div>
                     <div class="contents">
-                        <div class="bg_box"></div>
                         <div class="swiper" id="news_slide">
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
@@ -358,6 +359,8 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./script/jquery.fullPage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="./script/common.js"></script>
     <script src="./script/index.js"></script>
 </body>
