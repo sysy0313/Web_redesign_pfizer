@@ -24,9 +24,10 @@ main .wrap .tab_title {
 main .wrap .tab_title a {
     font-size:1.25rem; letter-spacing:-0.02em; font-weight:500;
     margin-right:40px;
-    display:block; padding:10px; 
+    display:block; padding:10px;
 }
 main .wrap .tab_title a:last-child {margin-right:0;}
+main .wrap .tab_title a:hover {color:#2B01BE; border-bottom:3px solid #2B01BE;}
 main .wrap .tab_title .active {
     color:#2B01BE; border-bottom:3px solid #2B01BE;
 }
@@ -36,6 +37,7 @@ main .wrap .tab_container section.active {display:block important;}
 /* -----------기업소개------------ */
 main .wrap .tab_container #intro {}
 main .wrap .tab_container #intro .title {text-align:center; margin-bottom:70px;}
+main .wrap .tab_container #intro .title.title_move {animation:title_move 1s linear;}
 main .wrap .tab_container #intro .title h1 {
     font-size:2.438rem; letter-spacing:-0.02em; font-weight:500;
     color:#1A0077;
@@ -54,21 +56,28 @@ main .wrap .tab_container #intro .contents .con2 {}
 main .wrap .tab_container #intro .contents .con3 {background:#f1f1f1;}
 main .wrap .tab_container #intro .contents .con4 {}
 main .wrap .tab_container #intro .contents .con .photo {
-    height:100%; width:40%;
+    height:550px; width:40%;
     background-repeat:no-repeat;
     background-size:cover;
+    background-position:center;
 }
 main .wrap .tab_container #intro .contents .con1 .photo {background-image:url(../images/company_01.jpg); border-bottom-right-radius:50px;}
+main .wrap .tab_container #intro .contents .con1 .photo.move {animation:move_left 1s linear;}
 main .wrap .tab_container #intro .contents .con2 .photo {background-image:url(../images/company_02.jpg); border-bottom-left-radius:50px;}
+main .wrap .tab_container #intro .contents .con2 .photo.move {animation:move_right 1s linear;}
 main .wrap .tab_container #intro .contents .con3 .photo {background-image:url(../images/company_03.jpg); border-bottom-right-radius:50px;}
+main .wrap .tab_container #intro .contents .con3 .photo.move {animation:move_left 1s linear;}
 main .wrap .tab_container #intro .contents .con4 .photo {background-image:url(../images/company_04.jpg); border-bottom-left-radius:50px;}
-main .wrap .tab_container #intro .contents .con .txt {
-    width:60%; 
-}
+main .wrap .tab_container #intro .contents .con4 .photo.move {animation:move_right 1s linear;}
+main .wrap .tab_container #intro .contents .con .txt {width:60%;}
 main .wrap .tab_container #intro .contents .con1 .txt {padding:0 300px 0 120px;}
+main .wrap .tab_container #intro .contents .con1 .txt.move {animation:move_right 1s linear;}
 main .wrap .tab_container #intro .contents .con3 .txt {padding:0 300px 0 120px;}
+main .wrap .tab_container #intro .contents .con3 .txt.move {animation:move_right 1s linear;}
 main .wrap .tab_container #intro .contents .con2 .txt {padding:0 120px 0 300px;}
+main .wrap .tab_container #intro .contents .con2 .txt.move {animation:move_left 1s linear;}
 main .wrap .tab_container #intro .contents .con4 .txt {padding:0 120px 0 300px;}
+main .wrap .tab_container #intro .contents .con4 .txt.move {animation:move_left 1s linear;}
 main .wrap .tab_container #intro .contents .con .txt h2 {
     font-size:2.50rem; letter-spacing:-0.02em; font-weight:700; line-height:55px;
     color:#1A0077;
@@ -81,6 +90,7 @@ main .wrap .tab_container #intro .contents .con .txt p {
 /* ---------------핵심가치--------------- */
 main .wrap .tab_container #value {}
 main .wrap .tab_container #value .title {text-align:center; margin-bottom:70px;}
+main .wrap .tab_container #value .title.title_move {animation:title_move 1s linear;}
 main .wrap .tab_container #value .title .top {margin-bottom:100px;}
 main .wrap .tab_container #value .title .btm {}
 main .wrap .tab_container #value .title h2 {
@@ -92,6 +102,7 @@ main .wrap .tab_container #value .title p {
     font-size:1.938rem; letter-spacing:-0.02em; line-height:45px;
 }
 main .wrap .tab_container #value .contents {}
+main .wrap .tab_container #value .contents.move {animation:title_move 1.5s linear;}
 main .wrap .tab_container #value .contents .top {
     display:flex; justify-content:center; margin-bottom:5px;
 }
@@ -111,8 +122,8 @@ main .wrap .tab_container #value .contents .box_navy {
 }
 main .wrap .tab_container #value .contents .box > * {margin-bottom:30px;}
 main .wrap .tab_container #value .contents .box > *:last-child {margin-bottom:0;}
-main .wrap .tab_container #value .contents .box .icon {}
-main .wrap .tab_container #value .contents .box .icon img {}
+main .wrap .tab_container #value .contents .box .icon {width:100px; height:100px;}
+main .wrap .tab_container #value .contents .box .icon img {width:100%;}
 main .wrap .tab_container #value .contents .box h3 {
     font-size:1.938rem; letter-spacing:-0.02em; color:#fff;
 }
@@ -121,60 +132,65 @@ main .wrap .tab_container #value .contents .box .desc {
     line-height:30px; padding:0 50px;;
 }
 /* -------------연혁----------------- */
-main .wrap .tab_container #histroy {}
-main .wrap .tab_container #histroy h1 {
+main .wrap .tab_container #history {}
+main .wrap .tab_container #history h1 {
     font-size:3.125rem; letter-spacing:-0.02em; font-weight:500;
     color:#1A0077; margin-bottom:70px; text-align:center;
 }
-main .wrap .tab_container #histroy .wrap {}
-main .wrap .tab_container #histroy .wrap .period {margin-bottom:100px;}
-main .wrap .tab_container #histroy .wrap .period1 .title {background-image:url(../images/history_01.jpg);}
-main .wrap .tab_container #histroy .wrap .period1 .photo {background-image:url(../images/history_01_photo.jpg);}
-main .wrap .tab_container #histroy .wrap .period2 .title {background-image:url(../images/history_02.jpg);}
-main .wrap .tab_container #histroy .wrap .period2 .photo {background-image:url(../images/history_02_photo.jpg)}
-main .wrap .tab_container #histroy .wrap .period3 .title {background-image:url(../images/history_03.jpg);}
-main .wrap .tab_container #histroy .wrap .period3 .photo {background-image:url(../images/history_03_photo.jpg);}
-main .wrap .tab_container #histroy .wrap .period .title {
+main .wrap .tab_container #history h1.title_move {animation:title_move 1s linear;}
+main .wrap .tab_container #history .wrap {}
+main .wrap .tab_container #history .wrap .period {margin-bottom:100px;}
+main .wrap .tab_container #history .wrap .period.move {animation:title_move 1.2s linear;}
+main .wrap .tab_container #history .wrap .period1 .title {background-image:url(../images/history_01.jpg);}
+main .wrap .tab_container #history .wrap .period1 .photo {background-image:url(../images/history_01_photo.jpg); background-position:30% 30%;}
+main .wrap .tab_container #history .wrap .period2 .title {background-image:url(../images/history_02.jpg);}
+main .wrap .tab_container #history .wrap .period2 .photo {background-image:url(../images/history_02_photo.jpg); background-position:30% 70%;}
+main .wrap .tab_container #history .wrap .period3 .title {background-image:url(../images/history_03.jpg);}
+main .wrap .tab_container #history .wrap .period3 .photo {background-image:url(../images/history_03_photo.jpg); background-position:20% 30%}
+main .wrap .tab_container #history .wrap .period .title {
     height:400px;
-    background-repeat:no-repeat; background-size:cover; background-position:center;
+    background-repeat:no-repeat; background-size:cover; 
     background-attachment:fixed;
     display:flex; flex-flow:column nowrap; align-items:center; justify-content:space-between;
-    padding:10px;
+    padding:40px;
 }
-main .wrap .tab_container #histroy .wrap .period .title h2 {
-    font-size:2.438rem; letter-spacing:-0.02em;
+main .wrap .tab_container #history .wrap .period .title h2 {
+    font-size:2.438rem; letter-spacing:-0.02em; font-weight:700;
     color:rgba(255,255,255,0.7);
 }
-main .wrap .tab_container #histroy .wrap .period .title p {
-    font-size:10rem; letter-spacing:-0.02em; font-weight:700;
+main .wrap .tab_container #history .wrap .period .title p {
+    font-size:10rem; letter-spacing:-0.02em; font-weight:900;
     color:rgba(255,255,255,0.7);
 }
 /* 내용 */
-main .wrap .tab_container #histroy .wrap .period .contents {
+main .wrap .tab_container #history .wrap .period .contents {
     width:1410px; margin:0 auto; padding:40px 0; 
     display:flex; justify-content:space-between;
 }
-main .wrap .tab_container #histroy .wrap .period .contents .photo {
+main .wrap .tab_container #history .wrap .period .contents .photo {
     width:40%; height:300px; margin-right:60px;
 }
-main .wrap .tab_container #histroy .wrap .period .contents .txt {
+main .wrap .tab_container #history .wrap .period .contents .txt {
     width:60%;
 }
-main .wrap .tab_container #histroy .wrap .period .contents .txt dl {
+main .wrap .tab_container #history .wrap .period .contents .txt dl {
     display:flex; 
     margin-bottom:30px; 
 }
-main .wrap .tab_container #histroy .wrap .period .contents .txt dl dt {
+main .wrap .tab_container #history .wrap .period .contents .txt dl dt {
+    font-size:1.25rem;
     letter-spacing:-0.02em; font-weight:500; color:#2B01BE;
-    margin-right:20px; line-height:25px;
+    margin-right:20px; line-height:35px;
 }
-main .wrap .tab_container #histroy .wrap .period .contents .txt dl dd {}
-main .wrap .tab_container #histroy .wrap .period .contents .txt dl dd p {
-    letter-spacing:-0.02em; line-height:25px;
+main .wrap .tab_container #history .wrap .period .contents .txt dl dd {}
+main .wrap .tab_container #history .wrap .period .contents .txt dl dd p {
+    font-size:1.25rem;
+    letter-spacing:-0.02em; line-height:35px;
 }
 /* -----------map----------------- */
 main .wrap .tab_container #map_section {}
 main .wrap .tab_container #map_section .title {margin-bottom:50px; text-align:center;}
+main .wrap .tab_container #map_section .title.title_move {animation:title_move 1s linear;}
 main .wrap .tab_container #map_section .title h1 {
     font-size:3.125rem; letter-spacing:-0.02em; font-weight:500; 
     color:#1A0077;
@@ -184,7 +200,21 @@ main .wrap .tab_container #map_section .title p {
     font-size:1.563rem; letter-spacing:-0.02em; line-height:45px;
 }
 main .wrap .tab_container #map_section .contents {}
+main .wrap .tab_container #map_section .contents.move {animation:title_move 1.2s linear;}
 main .wrap .tab_container #map_section .contents #map {
     width:1410px; height:750px; margin:0 auto;
     background:lightblue;
+}
+
+@keyframes title_move {
+    0% {opacity:0; transform:translateY(120px)}
+    100% {opacity:1; transform:translateY(0)}
+}
+@keyframes move_left {
+    0% {opacity:0; transform:translateX(-120px)}
+    100% {opacity:1; transform:translateX(0)}
+}
+@keyframes move_right {
+    0% {opacity:0; transform:translateX(120px)}
+    100% {opacity:1; transform:translateX(0)}
 }

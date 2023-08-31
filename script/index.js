@@ -87,8 +87,14 @@ const news_slide = new Swiper('#news_slide',{
     }, //자동재생
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
     effect:'horizontal',// 
-    slidesPerView:3,
+    slidesPerView:'auto',
     spaceBetween:30,
+    breakpoints:{
+        //해상도:{옵션:값} 작은값->큰값
+        320:{slidesPerView:1}, //320이상일 때
+        800:{slidesPerView:2}, //800이상일 때
+        1250:{slidesPerView:3},//1250이상일 경우 슬라이드 4개 표시
+    },
     
 });
 //contribution_slide
@@ -99,10 +105,16 @@ const contribution_slide = new Swiper('#contribution_slide',{
     }, //자동재생
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
     effect:'horizontal',
-    slidesPerView:3,
+    slidesPerView:'auto',
     spaceBetween:30,
     pagination: {
         el: '#contribution_slide .swiper-pagination',
+    },
+    breakpoints:{
+        //해상도:{옵션:값} 작은값->큰값
+        320:{slidesPerView:1}, //320이상일 때
+        800:{slidesPerView:2}, //800이상일 때
+        1050:{slidesPerView:3},//1050이상일 경우 슬라이드 4개 표시
     },
 });
 // 스크롤트리거

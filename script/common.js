@@ -47,6 +47,7 @@ sub_bg.addEventListener('mouseout', function(){
 // m_nav open
 m_nav_btn.addEventListener('click',function(e){
     e.preventDefault();
+    this.classList.toggle('active')
     search_open.classList.remove('open')
     m_nav_open.classList.toggle('open')
     header.classList.toggle('open')

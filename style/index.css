@@ -96,6 +96,7 @@ main {overflow:hidden;}
 }
 #wrap .research .container .contents .left {
     background:url(../images/research_con.jpg);
+    background-size:cover;
     width:50%; height:450px;
 }
 #wrap .research .container .contents .right {width:50%; background:#ffffff;}
@@ -108,7 +109,7 @@ main {overflow:hidden;}
 #wrap .research .container .contents .right .research_con:hover {background:#1A0077}
 #wrap .research .container .contents .right .research_con:hover .txt h3 {color:#fff;}
 #wrap .research .container .contents .right .research_con:hover .txt .desc {color:#fff;}
-#wrap .research .container .contents .right .research_con .txt {}
+#wrap .research .container .contents .right .research_con .txt {width:80%;}
 #wrap .research .container .contents .right .research_con .txt h3 {
     font-size:1.938rem; margin-bottom:20px; 
 }
@@ -116,7 +117,9 @@ main {overflow:hidden;}
     color:#555; letter-spacing:-0.02em; line-height:30px;
 }
 #wrap .research .container .contents .right .research_con .icon {}
-#wrap .research .container .contents .right .research_con .icon img {}
+#wrap .research .container .contents .right .research_con .hover {}
+#wrap .research .container .contents .right .research_con .icon img {width:100%;}
+#wrap .research .container .contents .right .research_con .hover img {width:100%;}
 #wrap .research .container .contents .right .con1 {}
 #wrap .research .container .contents .right .con2 {}
 #wrap .research .container .contents .right .con3 {
@@ -179,9 +182,9 @@ main {overflow:hidden;}
 #wrap .drug .container .contents a h3 {font-size:1.7rem; letter-spacing:-0.06em; margin-bottom:25px;}
 #wrap .drug .container .contents a .hover {font-size:1.563rem; margin-bottom:25px; color:#fff;}
 #wrap .drug .container .contents a .icon_show {}
-#wrap .drug .container .contents a .icon_show img {}
+#wrap .drug .container .contents a .icon_show img {width:100%;}
 #wrap .drug .container .contents a .icon_hover {}
-#wrap .drug .container .contents a .icon_hover img {}
+#wrap .drug .container .contents a .icon_hover img {width:100%;}
 /* drug end */
 /*----------------news----------------------*/
 #wrap .news {

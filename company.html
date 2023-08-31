@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>찾아오시는 길 | 화이자</title>
+    <title>기업소개 | 화이자</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon"> 
@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/common_responsive.css">
     <link rel="stylesheet" href="./style/company.css">
+    <link rel="stylesheet" href="./style/company_common_responsive.css">
+    <link rel="stylesheet" href="./style/company_intro_responsive.css">
+    <link rel="stylesheet" href="./style/company_value_responsive.css">
+    <link rel="stylesheet" href="./style/company_history_responsive.css">
+    <link rel="stylesheet" href="./style/company_map_responsive.css">
 </head>
 <body>
     <!-- header -->
@@ -21,13 +26,13 @@
         </div>
         <div class="wrap">
             <div class="tab_title">
-                <a href="#">기업소개</a>
+                <a href="#" class="active">기업소개</a>
                 <a href="#">핵심가치</a>
                 <a href="#">연혁</a>
-                <a href="#" class="active">찾아오시는 길</a>
+                <a href="#">찾아오시는 길</a>
             </div><!-- tab title end -->
             <div class="tab_container">
-                <section id="intro">
+                <section id="intro" class="active">
                     <div class="title">
                         <h1>기업소개</h1>
                         <p>한국화이자제약은 국내 제약업계를 선도하며<br>지역 사회 발전에 기여하기 위해 끊임없이 노력하고 있습니다.</p>
@@ -105,7 +110,7 @@
                         </div>
                     </div>
                 </section><!-- value end -->
-                <section id="histroy">
+                <section id="history">
                     <h1>연혁</h1>
                     <div class="wrap">
                         <div class="period period1">
@@ -133,7 +138,7 @@
                                     <dl><dt>1999</dt><dd><p>대한의학협회와 함께 ‘화이자의학상’ 제정</p></dd></dl>
                                     <dl><dt>2000</dt><dd><p>워너-램버트 인수</p></dd></dl>
                                     <dl><dt>2001</dt><dd><p>화이자 글로벌 연구개발 그룹(PGRD)에서 다국가 임상 연구에 한국 포함</p></dd></dl>
-                                    <dl><dt>2002</dt><dd><p>대표적 사회공헌 프로그램인 ‘화이자 사랑의 병원 그림 축제’ 캠페인 출범 ‘화이자 사랑의 장학금’ 출범</p></dd></dl>
+                                    <dl><dt>2002</dt><dd><p>대표적 사회공헌 프로그램인 ‘화이자 사랑의 병원 그림 축제’ 캠페인 출범 </p><p>‘화이자 사랑의 장학금’ 출범</p></dd></dl>
                                     <dl><dt>2003</dt><dd><p>파마시아 인수</p><p>‘화이자 사랑의 장학금’ 통해 의대 및 일반대학생에게 장학금 전달</p></dd></dl>
                                     <dl><dt>2004</dt><dd><p>전직원이 참여하는 사회공헌 프로그램, ‘화이자 사랑의 나눔장터’ 개최</p></dd></dl>
                                     <dl>
@@ -244,7 +249,7 @@
                         </div><!-- period end -->
                     </div>
                 </section><!-- history end -->
-                <section id="map_section " class="active">
+                <section id="map_section">
                     <div class="title">
                         <h1>찾아오시는 길</h1>
                         <p>주소 : 서울특별시 중구 퇴계로 100, 스테이트타워남산 5,6층 (우) 04631<br>전화: (대표) 02-317-2114, (의학정보문의) 02-317-2148</p>
@@ -261,8 +266,12 @@
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="./script/common.js"></script>
+    <!-- <script src="./script/common.js"></script> -->
     <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=534ba1fbbca240590d607693a6811718"></script> -->
     <script src="./script/company.js"></script>
+    <script src="./script/company_intro.js"></script>
+    <script src="./script/company_value.js"></script>
+    <script src="./script/company_history.js"></script>
+    <script src="./script/company_map.js"></script>
 </body>
 </html>

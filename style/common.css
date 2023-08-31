@@ -79,7 +79,13 @@ header .lnb .m_nav_btn span:nth-child(1) {
     width:40px;
 }
 header .lnb .m_nav_btn span:nth-child(2) {
-    width:30px;
+    width:30px; transition:all 0.2s;
+}
+header .lnb .m_nav_btn:hover span:nth-child(2) {
+    width:40px;
+}
+header .lnb .m_nav_btn.active span:nth-child(2) {
+    width:40px;
 }
 /* m_nav_open */
 header .m_nav_open {
@@ -146,9 +152,6 @@ header .search_open #search_frm fieldset #search_input {
 header .search_open #search_frm fieldset #search_btn {
     width:5%; background:none;
 }
-
-
-
 /* footer */
 footer {width:100%; padding:50px 30px;}
 footer .f_top {
@@ -162,6 +165,7 @@ footer .f_top .fnb {}
 footer .f_top .fnb a {
     font-size:1.25rem; letter-spacing:-0.02em; font-weight:500; margin-left:45px;
 }
+footer .f_top .fnb a:first-child {margin-left:0;}
 footer .f_top .fnb a:hover {text-decoration:underline;}
 footer .f_btm {
     padding-top:20px;
@@ -170,4 +174,5 @@ footer .f_btm {
 footer .f_btm .copy {width:50%; line-height:30px; letter-spacing:-0.02em;}
 footer .f_btm .sns {}
 footer .f_btm .sns a {margin-left:10px;}
+footer .f_btm .sns a:first-child {margin-left:0;}
 footer .f_btm .sns a img {}

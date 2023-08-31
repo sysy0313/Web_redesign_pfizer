@@ -1,4 +1,55 @@
-/* 반응형 css header*/
+/* common - 반응형*/
+header, main, footer {min-width:320px;}
 @media screen and (max-width:1300px){
+    /* header 조절 */
+    header {height:80px;}
+    /* header 로고 */
+    header h1 {width:130px;}
+    header .m_nav_open {top:80px}
     nav {display:none;}
+    /* footer */
+    footer .f_top {flex-flow:column nowrap; align-items:flex-start;}
+    footer .f_top .logo {width:130px; margin-bottom:20px;}
+    footer .f_top .fnb a {font-size:1rem; margin-left:20px; }
+    footer .f_btm .copy {width:80%}
+
+}/* 1300 end */
+
+@media screen and (max-width:800px){
+    /* header 조절 */
+    header {padding:0 15px;}
+    /* m_nav_open 100% */
+    header .m_nav_open {width:100%}
+    /* search_open */
+    header .search_open #search_frm {width:90%;}
+    /* footer fnb*/
+    footer .f_top .fnb {
+    display:flex; flex-flow:row wrap;
+    width:350px;
+}
+    footer .f_top .fnb a {font-size:0.8rem; margin-bottom:10px;}
+    footer .f_top .fnb a:nth-child(4) {margin-left:0;}
+    footer .f_btm .copy {font-size:0.8rem;}
+}/* 800 end */
+@media screen and (max-width:650px){
+    /* footer  */
+    footer .f_btm {flex-flow:column nowrap;}
+    footer .f_btm .copy {margin-bottom:10px;}
+}/* 650 end */
+@media screen and (max-width:500px){
+    /* header 로고 조절 */
+    header h1 {width:110px;}
+    /* lnb 아이콘 조절 */
+    header .lnb > * {margin-left:7px;}
+    header .lnb .header_search {width:25px; height:25px;}
+    header .lnb .lang span {display:none; }
+    /* 검색 */
+    header .search_open #search_frm fieldset #search_input {width:85%;}
+    header .search_open #search_frm fieldset #search_btn {width:15%;}
+    /* footer 로고 조절 */
+    footer .f_top .logo {width:110px;}
+}
+@media screen and (max-width:400px){
+    footer .f_top .fnb {width:300px;}
+    footer .f_top .fnb a:nth-child(3) {margin-left:0;}
 }

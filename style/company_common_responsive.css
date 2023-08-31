@@ -1,0 +1,45 @@
+/* company 공통 반응형 */
+@media screen and (max-width:850px){
+    /* 제목 */
+    /* intro 제목 */
+    main .wrap .tab_container #intro .title h1 {font-size:1.938rem; margin-bottom:40px;}
+    main .wrap .tab_container #intro .title p {font-size:1.5rem;  line-height:40px;}
+    /* value 제목 */
+    main .wrap .tab_container #value .title .top {margin-bottom:70px;}
+    main .wrap .tab_container #value .title h2  {font-size:1.938rem; margin-bottom:40px;}
+    main .wrap .tab_container #value .title p {font-size:1.5rem;  line-height:40px;}
+    /* history 제목 */
+    main .wrap .tab_container #history h1 {font-size:1.938rem; margin-bottom:40px;}
+    /* map 제목 */
+    main .wrap .tab_container #map_section .title h1 {font-size:1.938rem; margin-bottom:40px;}
+    main .wrap .tab_container #map_section .title p {font-size:1.5rem;  line-height:40px;}
+}
+@media screen and (max-width:770px){
+    /* intro */
+    main .wrap .tab_container #intro .title p {font-size:1.25rem;  line-height:30px;}
+    /* value */
+    main .wrap .tab_container #value .title p {font-size:1.25rem;  line-height:30px;}
+    /* map */
+    main .wrap .tab_container #map_section .title p {font-size:1.25rem;  line-height:30px;}
+}
+@media screen and (max-width:620px){
+    /* intro */
+    main .wrap .tab_container #intro .title p {font-size:1rem;  line-height:25px; padding:0 15px;}
+    /* value */
+    main .wrap .tab_container #value .title p {font-size:1rem;  line-height:25px; padding:0 15px;}
+    /* map */
+    main .wrap .tab_container #map_section .title p {font-size:1rem;  line-height:25px; padding:0 15px;} 
+}
+
+@media screen and (max-width:550px){
+    /* bnr */
+    main .bnr {height:300px;}
+    main .bnr h1 span {font-size:3rem;}
+    main .bnr h1 em {font-size:3rem; }
+    /* tab_title */
+    main .wrap .tab_title a {font-size:1rem; margin-right:15px;}
+}/* 550 end */
+@media screen and (max-width:420px){
+    /* tab_title */
+    main .wrap .tab_title a {font-size:0.9rem; margin-right:10px; letter-spacing:-0.06em;}
+}

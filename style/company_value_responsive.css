@@ -1,0 +1,24 @@
+/* company value 반응형 */
+@media screen and (max-width:850px){
+    main .wrap .tab_container #value .contents .box {width:300px; height:300px;}
+    main .wrap .tab_container #value .contents .box > * {margin-bottom:10px;}
+    main .wrap .tab_container #value .contents .box .icon {width:80px; height:80px;}
+    main .wrap .tab_container #value .contents .box h3 {font-size:1.5rem; letter-spacing:-0.02em; }
+}/* 850 end */
+@media screen and (max-width:650px){
+    main .wrap .tab_container #value .contents .box {width:200px; height:200px;}
+    main .wrap .tab_container #value .contents .box .icon {width:45px; height:45px;}
+    main .wrap .tab_container #value .contents .box h3 {font-size:1.3rem; letter-spacing:-0.04em;}
+    main .wrap .tab_container #value .contents .box h3:nth-of-type(1) {display:none;}
+    main .wrap .tab_container #value .contents .box .desc {
+        letter-spacing:-0.04em; font-size:0.9rem; line-height:25px; padding:0 10px;;
+    }
+}/* 650 end */
+@media screen and (max-width:430px){
+    main .wrap .tab_container #value .contents .box {width:150px; height:150px;}
+    main .wrap .tab_container #value .contents .box .icon {display:none;}
+    main .wrap .tab_container #value .contents .box h3 {font-size:1rem;}
+    main .wrap .tab_container #value .contents .box .desc {
+        letter-spacing:-0.04em; font-size:0.8rem; line-height:20px; padding:0 10px;;
+    }
+}/* 430 end */
