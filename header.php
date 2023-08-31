@@ -6,21 +6,21 @@
             <li>
                 <a href="./company.html">회사 소개</a>
                 <ul class="sub">
-                    <li><a href="#">기업소개</a></li>
-                    <li><a href="#">핵심가치</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="./company.html">기업소개</a></li>
+                    <li><a href="./company.html">핵심가치</a></li>
+                    <li><a href="./company.html">연혁</a></li>
+                    <li><a href="./company.html">찾아오시는 길</a></li>
                 </ul>
             </li>
             <li>
                 <a href="./research.html">연구 개발</a>
                 <ul class="sub">
-                    <li><a href="#">주요의약품</a></li>
-                    <li><a href="#">제품 파이프라인</a></li>
-                    <li><a href="#">한국화이자제약R&D</a></li>
-                    <li><a href="#">연도별 활동</a></li>
-                    <li><a href="#">성과</a></li>
-                    <li><a href="#">앞으로의 방향</a></li>
+                    <li><a href="./research.html">주요의약품</a></li>
+                    <li><a href="./research.html">제품 파이프라인</a></li>
+                    <li><a href="./research.html">한국화이자제약R&D</a></li>
+                    <li><a href="./research.html">연도별 활동</a></li>
+                    <li><a href="./research.html">성과</a></li>
+                    <li><a href="./research.html">앞으로의 방향</a></li>
                 </ul>
             </li>
             <li><a href="./drug.html">제품 정보</a></li>
@@ -48,21 +48,21 @@
             <li>
                 <a href="#"><span>회사 소개</span><img src="./images/icon_sub_more.png" alt="더보기"></a>
                 <ul class="sub">
-                    <li><a href="#">기업소개</a></li>
-                    <li><a href="#">핵심가치</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="./company.html">기업소개</a></li>
+                    <li><a href="./company.html">핵심가치</a></li>
+                    <li><a href="./company.html">연혁</a></li>
+                    <li><a href="./company.html">찾아오시는 길</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#"><span>연구 개발</span><img src="./images/icon_sub_more.png" alt="더보기"></a>
                 <ul class="sub">
-                    <li><a href="#">주요의약품</a></li>
-                    <li><a href="#">제품 파이프라인</a></li>
-                    <li><a href="#">한국화이자제약R&D</a></li>
-                    <li><a href="#">연도별 활동</a></li>
-                    <li><a href="#">성과</a></li>
-                    <li><a href="#">앞으로의 방향</a></li>
+                    <li><a href="./drug.html">주요의약품</a></li>
+                    <li><a href="./drug.html">제품 파이프라인</a></li>
+                    <li><a href="./drug.html">한국화이자제약R&D</a></li>
+                    <li><a href="./drug.html">연도별 활동</a></li>
+                    <li><a href="./drug.html">성과</a></li>
+                    <li><a href="/drug.html">앞으로의 방향</a></li>
                 </ul>
             </li>
             <li><a href="#"><span>제품 정보</span></a></li>

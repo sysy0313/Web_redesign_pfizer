@@ -1,1 +1,41 @@
 /* company history 반응형 */
+@media screen and (max-width:1450px){
+    main .wrap .tab_container #history .wrap .period .contents {width:1250px;}
+    main .wrap .tab_container #history .wrap .period .contents .photo {margin-right:40px;}
+    
+}/* 1450 end */
+@media screen and (max-width:1280px){
+    main .wrap .tab_container #history .wrap .period .contents {width:850px;}
+    main .wrap .tab_container #history .wrap .period .contents .photo {margin-right:20px;}
+}/* 1280 end */
+@media screen and (max-width:1030px){
+    main .wrap .tab_container #history .wrap .period .title p {font-size:8rem;}
+    main .wrap .tab_container #history .wrap .period .contents .photo {display:none;}
+    main .wrap .tab_container #history .wrap .period .contents {width:calc(100% - 30px); margin:0 auto;}
+    main .wrap .tab_container #history .wrap .period .contents .txt {width:100%}
+}/* 1030 end */
+@media screen and (max-width:850px){
+    main .wrap .tab_container #history .wrap .period .title p {font-size:6rem;}
+}/* 850 end */
+@media screen and (max-width:650px){
+    main .wrap .tab_container #history .wrap .period {margin-bottom:60px;}
+    main .wrap .tab_container #history .wrap .period .title {height:350px;}
+    main .wrap .tab_container #history .wrap .period .title p {font-size:4rem;}
+    main .wrap .tab_container #history .wrap .period .contents .txt dl {margin-bottom:20px;}
+    main .wrap .tab_container #history .wrap .period .contents .txt dl dt {font-size:1rem; line-height:30px;}
+    main .wrap .tab_container #history .wrap .period .contents .txt dl dd p {font-size:1rem; line-height:30px;}
+}/* 650 end */
+@media screen and (max-width:460px){
+    main .wrap .tab_container #history .wrap .period {margin-bottom:50px;}
+    main .wrap .tab_container #history .wrap .period .title {height:300px; background-attachment:scroll;}
+    main .wrap .tab_container #history .wrap .period .title p {font-size:3rem;}
+    main .wrap .tab_container #history .wrap .period .contents .txt dl {margin-bottom:15px;}
+    main .wrap .tab_container #history .wrap .period .contents .txt dl dt {font-size:0.9rem; line-height:25px;}
+    main .wrap .tab_container #history .wrap .period .contents .txt dl dd p {font-size:0.9rem; line-height:25px;}
+}/* 460 end */
+@media screen and (max-width:370px){
+    main .wrap .tab_container #history .wrap .period .title {height:200px; padding:20px 0;}
+    main .wrap .tab_container #history .wrap .period .title h2 {font-size:1.5rem;}
+    main .wrap .tab_container #history .wrap .period .title p {font-size:2rem; letter-spacing:-0.04em;}
+
+}

@@ -1,0 +1,11 @@
+/* company map 반응형 */
+@media screen and (max-width:1440px){
+    main .wrap .tab_container #map_section .contents #map {
+        width:calc(100% - 30px);
+    }
+}/* 1440 end */
+@media screen and (max-width:850px){
+    main .wrap .tab_container #map_section .contents #map {
+        height:500px;
+    }
+}

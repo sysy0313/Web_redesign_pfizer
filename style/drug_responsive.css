@@ -1,0 +1,46 @@
+/* drug 반응형 */
+@media screen and (max-width:1440px){
+    main .bnr {margin-bottom:80px;}
+    main #wrap {width:calc(100% - 30px)}
+    main .cat {flex-flow:row wrap; margin-bottom:80px;}
+    main .cat a {width:calc(33% - 30px / 5); margin-bottom:10px;}
+}/* 1440 end */
+@media screen and (max-width:800px){
+    main .cat a {padding:0 10px;}
+    main .cat a h2 {font-size:1.2rem;}
+    main .cat a p img {width:40px; height:40px;}
+    main .container {flex-flow:column nowrap;}
+    main .search_div #search_frm {width:85%;}
+    main .container .view {width:100%; margin-bottom:50px;}
+    main .container .view .view_list li a {width:100%;} 
+    main .container .alphabet_search {width:100%;}
+    main .container .alphabet_search .list_wrap {flex-flow:column nowrap;}
+    main .container .alphabet_search .alphabet {
+        display:flex; flex-flow:row wrap; margin-bottom:20px;
+    }
+    main .container .alphabet_search .list {width:100%; height:300px;}
+    main .container .alphabet_search .list li a {width:100%;}
+}/* 800 end */
+@media screen and (max-width:600px){
+    main .cat a {height:100px;}
+    main .cat a p img {display:none;}
+    main .cat a h2 {width:100%;}
+}/* 600 end */
+@media screen and (max-width:550px){
+    /* bnr */
+    main .bnr {height:300px;}
+    main .bnr h1 span {font-size:3rem;}
+    main .bnr h1 em {font-size:3rem; }
+}/* 550 end */
+@media screen and (max-width:460px){
+    main .cat a {height:80px;}
+    main .cat a h2 {font-size:0.9rem; letter-spacing:-0.08rem;}
+    main .container .view .view_list li a {font-size:1rem;}
+    main .container .alphabet_search .list li a {font-size:1rem;}
+}
+@media screen and (max-width:380px){
+    main .bnr {margin-bottom:60px;}
+    main .bnr h1 span {font-size:2.5rem;}
+    main .bnr h1 em {font-size:2.5rem; }
+    main .cat {margin-bottom:60px;}
+}/* 380 end */

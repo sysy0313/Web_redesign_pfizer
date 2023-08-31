@@ -1,0 +1,54 @@
+/* research 반응형 */
+@media screen and (max-width:1350px){
+    main .container .contents .con .con_box {width:calc(100% - 100px);}
+    main .container .contents .con .con_box .txt {width:50%;}
+    main .container .contents .con .con_box .photo {width:40%; height:250px;}
+}/* 1350 end */
+@media screen and (max-width:1050px){
+    main .title p {width:calc(100% - 100px)}
+}/* 1050 end */
+@media screen and (max-width:900px){
+    main .container .contents .con .con_box .txt h2 {margin-bottom:10px;}
+    main .container .contents .con .con_box .txt h2 em {font-size:2rem; line-height:30px;}
+    main .container .contents .con .con_box .txt h2 span {font-size:1.3rem; line-height:30px;}
+    main .container .contents .con .con_box .txt p {font-size:1rem;}
+}/* 900 end */
+@media screen and (max-width:850px){
+    /* 제목 */
+    main .title h1 {font-size:1.938rem; margin-bottom:40px;}
+    main .title p {font-size:1.5rem;  line-height:40px; width:calc(100% - 80px)}
+    main .container h1 {font-size:1.938rem; margin-bottom:40px;}
+}/* 850 end */
+@media screen and (max-width:770px){
+    main .title p  {font-size:1.25rem;  line-height:30px; width:calc(100% - 60px)}
+}/* 770 end */
+@media screen and (max-width:750px){
+    main .container .contents .con .bg_box {width:30%;}
+    main .container .contents .con .con_box {width:calc(100% - 30px);}
+    main .container .contents .con .con_box .photo {width:35%; height:200px;}
+}/* 750 end */
+@media screen and (max-width:680px){
+    main .container .contents .con .con_box .txt {width:60%;}
+    main .container .contents .con .con_box .txt h2 em {font-size:1.5rem; line-height:25px;}
+    main .container .contents .con .con_box .txt h2 span {font-size:1rem; line-height:25px;}
+    main .container .contents .con .con_box .txt p {font-size:0.9rem;}
+}/* 680 end */
+@media screen and (max-width:620px){
+    main .title p {font-size:1rem;  line-height:25px; width:calc(100% - 30px)} 
+}/* 620 end */
+
+@media screen and (max-width:550px){
+    /* bnr */
+    main .bnr {height:300px;}
+    main .bnr h1 span {font-size:3rem;}
+    main .bnr h1 em {font-size:3rem; }
+}/* 550 end */
+@media screen and (max-width:450px){
+    main .container .contents .con .bg_box {
+        width:100%; height:10px; left:0; bottom:-30px; top:auto;
+    }
+    main .container .contents .con .con_box {flex-flow:column nowrap;}
+    main .container .contents .con .con_box .txt {width:100%; order:-1;}
+    main .container .contents .con .con_box .photo {width:100%; height:250px; order:1;}
+    
+}
