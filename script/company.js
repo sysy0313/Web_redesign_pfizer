@@ -1,4 +1,4 @@
-/* // 지도
+// 지도
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 var options = { //지도를 생성할 때 필요한 기본 옵션
 center: new kakao.maps.LatLng(37.5602013,126.9829327), //지도의 중심좌표.
@@ -11,7 +11,7 @@ var marker = new kakao.maps.Marker({
 position: markerPosition
 });
 // 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map); */
+marker.setMap(map);
 
 // tab
 const tab_title = document.querySelectorAll('.tab_title a')
