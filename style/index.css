@@ -9,24 +9,30 @@ main {overflow:hidden;}
     height:100vh;
     display:flex; justify-content:flex-end; align-items:center;
     padding-right:10%; 
-    animation:bg 10s linear alternate infinite;
+    animation:bg 15s linear infinite;
 }
 #wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 {
     text-align:right;
 }
-#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 span {
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 span:first-child {
     display:block; 
-    font-size:3.75rem; letter-spacing:-0.02em; line-height:90px;
+    font-size:3.75rem; letter-spacing:-0.02em; margin-bottom:20px;
     font-weight:500;
     transition:all 2s;
     opacity:0; transform:translateX(80px);
-
 }
 #wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 em {
     display:block;
     font-size:4.688rem; letter-spacing:-0.02em; font-weight:700;
-    line-height:90px;
+    margin-bottom:20px;
     color:#1A0077;
+    transition:all 2s 0.2s;
+    opacity:0; transform:translateX(80px);
+}
+#wrap .visual  #visual_slide  .swiper-wrapper .swiper-slide h1 span:last-child {
+    display:block; color:#fff;
+    font-size:1.5rem; letter-spacing:-0.04em; line-height:40px;
+    font-weight:500;
     transition:all 2s 0.3s;
     opacity:0; transform:translateX(80px);
 }

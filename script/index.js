@@ -8,7 +8,7 @@ $('#wrap').fullpage({
 // visual_slide
 const visual_slide = new Swiper('#visual_slide',{
     autoplay:{
-        delay:8000,
+        delay:6000,
         disableOnInteraction:false,//버튼 클릭 후 자동재생유지
     }, //자동재생
     loop:true, //마지막슬라이드->첫슬라이드 자연스럽게
@@ -16,24 +16,30 @@ const visual_slide = new Swiper('#visual_slide',{
     on:{
         init:function(){
             //슬라이드가 변경되기 전 초기 실행함수
-            this.slides[this.activeIndex].querySelector('.visual_txt span').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt span:first-child').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt span:last-child').style.opacity = '1';
             this.slides[this.activeIndex].querySelector('.visual_txt em').style.opacity = '1';
-            this.slides[this.activeIndex].querySelector('.visual_txt span').style.transform = 'translateX(0)'
+            this.slides[this.activeIndex].querySelector('.visual_txt span:first-child').style.transform = 'translateX(0)'
+            this.slides[this.activeIndex].querySelector('.visual_txt span:last-child').style.transform = 'translateX(0)'
             this.slides[this.activeIndex].querySelector('.visual_txt em').style.transform = 'translateX(0)'
         },
         slideChange:function(){
             //슬라이드 변경될 때 인식되는 실행함수
             //1. 활성화 전 모든 슬라이드 opacity:0; 만들기
             this.slides.forEach(target => {
-                target.querySelector('.visual_txt span').style.opacity = '0'
+                target.querySelector('.visual_txt span:first-child').style.opacity = '0'
+                target.querySelector('.visual_txt span:last-child').style.opacity = '0'
                 target.querySelector('.visual_txt em').style.opacity = '0'
-                target.querySelector('.visual_txt span').style.transform = 'translateX(80px)'
+                target.querySelector('.visual_txt span:first-child').style.transform = 'translateX(80px)'
+                target.querySelector('.visual_txt span:last-child').style.transform = 'translateX(80px)'
                 target.querySelector('.visual_txt em').style.transform = 'translateX(80px)'
             })
             //2. 활성화 슬라이드만 opacity:1
-            this.slides[this.activeIndex].querySelector('.visual_txt span').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt span:first-child').style.opacity = '1';
+            this.slides[this.activeIndex].querySelector('.visual_txt span:last-child').style.opacity = '1';
             this.slides[this.activeIndex].querySelector('.visual_txt em').style.opacity = '1';
-            this.slides[this.activeIndex].querySelector('.visual_txt span').style.transform = 'translateX(0)'
+            this.slides[this.activeIndex].querySelector('.visual_txt span:first-child').style.transform = 'translateX(0)'
+            this.slides[this.activeIndex].querySelector('.visual_txt span:last-child').style.transform = 'translateX(0)'
             this.slides[this.activeIndex].querySelector('.visual_txt em').style.transform = 'translateX(0)'
         }
     },

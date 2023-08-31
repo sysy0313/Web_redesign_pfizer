@@ -31,4 +31,16 @@ gsap.fromTo('.bnr h1', {
     scrollTrigger:'.bnr'
 }
 );
+gsap.fromTo('#wrap', {
+    //from
+    opacity:0,
+    x:100,
+},{
+    //to
+    opacity:1,
+    x:0,
+    duration:1.5,
+    scrollTrigger:'#wrap'
+}
+);
 
