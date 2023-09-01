@@ -5,6 +5,7 @@ $('#wrap').fullpage({
     navigation:true,
     navigationTooltips:['main','연구제품','제약제품','최신소식','사회공헌']
 })
+
 // visual_slide
 const visual_slide = new Swiper('#visual_slide',{
     autoplay:{
