@@ -20,7 +20,7 @@ const nav = document.querySelector('nav')
 // 모바일메뉴
 const m_nav_open = document.querySelector('.m_nav_open')
 const m_nav_btn = document.querySelector('.m_nav_btn')
-const m_nav_li = document.querySelectorAll('#m_gnb > li ')
+const m_nav_li = document.querySelectorAll('#m_gnb > li > a ')
 const m_nav_sub = document.querySelectorAll('.m_nav_open .sub')
 //검색
 const header_search = document.querySelector('.header_search')
@@ -59,7 +59,7 @@ m_nav_li.forEach(function(target, index){
     target.addEventListener('click', function(e){
         e.preventDefault();
         for(let i of m_nav_sub){i.classList.remove('open')}
-        target.lastElementChild.classList.toggle('open')
+        m_nav_sub[index].classList.add('open')
     })
 })
 // search_open
