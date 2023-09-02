@@ -20,7 +20,7 @@ const nav = document.querySelector('nav')
 // 모바일메뉴
 const m_nav_open = document.querySelector('.m_nav_open')
 const m_nav_btn = document.querySelector('.m_nav_btn')
-const m_nav_li = document.querySelectorAll('#m_gnb > li > a ')
+const m_nav_li = document.querySelectorAll('#m_gnb > li:nth-child(1) > a, #m_gnb > li:nth-child(2) > a,#m_gnb > li:nth-child(4) > a')
 const m_nav_sub = document.querySelectorAll('.m_nav_open .sub')
 //검색
 const header_search = document.querySelector('.header_search')
